@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+    <style>
+        div {
+            border: 2px dotted black;
+            width: fit-content;
+            
+            
+        }
+
+        span {
+            background-color: red;
+            display: inline-block;
+            padding-right: 50px;
+            padding-bottom: 50px;   
+        }
+
+        .green{
+            background-color: green;
+        }
+
+        div:nth-of-type(2) .green {
+            position: relative;
+            left:15px;
+            top: 15px;
+            
+        }
+
+        div:nth-of-type(3) .green{
+            position: absolute;
+            left: 20px;
+            margin-top: 10px;
+        
+        }
+       
+    </style>
+<body>
+    <p>position: static</p>
+    <div>
+        <span>One</span>
+        <span class="green">Two</span>
+        <span>Three</span>
+        <span>Four</span>
+    </div>
+    <br>
+
+    <p>position: relative</p>
+    <div>
+        <span>One</span>
+        <span class="green">Two</span>
+        <span>Three</span>
+        <span>Four</span>
+    </div>
+    <br>
+
+    <p>position: absolute</p>
+    <div>
+        <span>One</span>
+        <span class="green">Two</span>
+        <span>Three</span>
+        <span>Four</span>
+    </div>
+</body>
+</html>
