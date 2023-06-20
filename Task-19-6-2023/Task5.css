@@ -3,7 +3,7 @@ body{
 }
 
 div{
-    border: 1px solid ;
+    border: 1px solid black ;
     width: 600px;
     background-color: white;
     padding: 10px;
@@ -21,6 +21,11 @@ div{
     padding: 1px 3px;
 }
 
+
+/*:nth-child(3) p{
+    border: 2px dashed red;
+}*/
+
 div:nth-of-type(2){
     border: 2px dashed ;
 }
@@ -29,6 +34,6 @@ div:nth-of-type(2) p{
     border: 2px dashed red;
 }
 
-#lastp{
+.test{
     color: #a30ab0;
 }
