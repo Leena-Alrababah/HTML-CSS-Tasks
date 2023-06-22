@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+<style>
+
+    .green {
+        background-color: rgb(173, 207, 18);
+        height: 120px;
+        grid-column: 1/13;
+    }
+
+    /* blue boxes */
+    .blue {
+        background-color: rgb(10, 189, 189);
+        height: 150px;
+    }
+
+    .bfirst {
+        grid-column: 1/5;
+    }
+
+    .bsecond {
+        grid-column: 5/9;
+    }
+
+    .bthird {
+        grid-column: 9/13;
+    }
+
+    /* gray boxes */
+    .gray {
+        background-color: rgb(221, 214, 214);
+        height: 100px;
+        
+    }
+
+    .gfirst {
+        grid-column: 1/4;
+    }
+
+    .gsecond {
+        grid-column: 4/7;
+    }
+
+    .gthird {
+        grid-column: 7/10;
+    }
+
+    .gfourth {
+        grid-column: 10/13;
+    }
+
+    .maingrid {
+        display: grid;
+        grid-template-columns: repeat(12, auto);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+
+    @media screen and (min-width: 481px) and (max-width:768px){
+        .blue {
+            grid-column: 1/13;
+            height: 60px;
+        }
+
+        .gray {
+            height: 60px;
+        }
+
+        .gfirst {
+            grid-column: 1/7;
+        }
+
+        .gsecond {
+            grid-column: 7/13;
+        }
+
+        .gthird {
+            grid-column: 1/7;
+        }
+
+        .gfourth {
+            grid-column: 7/13;
+        }
+    }
+        
+    @media screen and (max-width: 480px ) {
+        .green{
+            height: 80px;
+        }
+        .blue {
+            grid-column: 1/13;
+            height: 120px;
+        }
+
+        .gray {
+            height: 60px;
+        }
+
+        .gfirst {
+            grid-column: 1/13;
+        }
+
+        .gsecond {
+            grid-column: 1/13;
+        }
+
+        .gthird {
+            grid-column: 1/13;
+        }
+
+        .gfourth {
+            grid-column: 1/13;
+        }
+    }  
+</style>
+</head>
+<body>
+     <center>
+
+<div class="maingrid">
+    <div class="green"></div>
+        
+    <div class="blue bfirst"></div>
+    <div class="blue bsecond"></div>
+    <div class="blue bthird"></div> 
+
+    <div class="gray gfirst"></div>
+    <div class="gray gsecond"></div>
+    <div class="gray gthird"></div>
+    <div class="gray gfourth"></div>
+</div>
+    </center>
+</body>
+</html>
